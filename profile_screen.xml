@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sample_appbg"
+        >
+
+        <ImageButton
+            android:id="@+id/back_nav_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icon1"
+            android:background="@drawable/back_nav_background"
+            app:backgroundTint="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="20dp"
+            android:onClick="goBack_profile"
+            android:contentDescription="Back button" />
+
+        <TextView
+            android:id="@+id/profilemsg1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/your_profile"
+            app:layout_constraintStart_toEndOf="@+id/back_nav_profile"
+            app:layout_constraintTop_toTopOf="@+id/back_nav_profile"
+            app:layout_constraintBottom_toTopOf="@+id/profileimg"
+            android:fontFamily="@font/lato_black"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:id="@+id/profileimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/vector"
+            app:layout_constraintTop_toBottomOf="@+id/profilemsg1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/edit_text_code"
+            android:padding="15dp"
+            android:contentDescription="Profile Image" />
+
+        <ImageView
+            android:id="@+id/profileicon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/profileimg"
+            app:layout_constraintStart_toEndOf="@id/profileimg"
+            android:src="@drawable/icon"
+            android:layout_marginTop="-15dp"
+            android:layout_marginStart="-20dp" />
+
+        <EditText
+            android:id="@+id/firstnameet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/profileimg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/profile_name_msg"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/scnameet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/firstnameet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/profile_msg"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/savebt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/scnameet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/save_btn"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@color/dark_blue"
+            android:layout_marginTop="270dp"
+            android:layout_marginHorizontal="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

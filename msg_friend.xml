@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/receiveet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Hello there!"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15sp"
+            android:background="@drawable/receive_msg"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/sendet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/receiveet"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Hey! How are you?"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15sp"
+            android:background="@drawable/send_msg"
+            android:padding="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
